@@ -1,0 +1,4 @@
+// mixin de transition
+@mixin mytrans ($duree : 5s, $effet : ease-in-out, ){
+    transition: $duree all $effet;
+}

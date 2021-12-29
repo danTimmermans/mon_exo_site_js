@@ -1,0 +1,22 @@
+body{
+    background-color: antiquewhite;
+}
+.main_wrap{
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 70px;
+    h1{
+        text-align: center;
+        text-transform: uppercase;
+        padding: 20px;
+    }
+    section{
+        // padding: 10px;
+        h2:first-child{
+            padding-top: 60px;
+        }
+        h2{
+            padding: 50px;
+        }
+    }
+}
