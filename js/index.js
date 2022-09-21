@@ -47,7 +47,6 @@ window.addEventListener("scroll", () =>{
 let burger2 = document.querySelector(".burger-menu");
 let nav2 = document.querySelector(".nav_2");
 let link = document.querySelectorAll(".nav_2_link")
-// console.log(link.indexOf());
 let navLinks = [...document.querySelectorAll('.nav_2 a')];
 console.log(navLinks);
 let sections = [...document.querySelectorAll('section')];
@@ -60,7 +59,6 @@ function hasClick(){
 }
 for(i=0; i<link.length; i++){
     link[i].addEventListener("click", closeNav);
-    // link[i].addEventListener('click', addScrollSmooth);
 }
 burger2.addEventListener("click", hasClick);
 
@@ -88,7 +86,7 @@ function addScrollSmooth(e){
         top: sectionPosition[linkIndex], behavior: 'smooth'
     })
 }
-
+window.addEventListener('resize', positionCalc)
 
 
 
